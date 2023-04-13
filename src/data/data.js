@@ -51,4 +51,151 @@ const section = [
     }
 ];
 
-export {section};
+const menu = [
+    {
+        title: 'Dc Comics',
+        items: [
+            {
+                text: 'Characters',
+                url: '#'
+            },
+            {
+                text: 'Comics',
+                url: '#'
+            },
+            {
+                text: 'Movies',
+                url: '#'
+            },
+            {
+                text: 'TV',
+                url: '#'
+            },
+            {
+                text: 'Games',
+                url: '#'
+            },
+            {
+                text: 'Videos',
+                url: '#'
+            },
+            {
+                text: 'News',
+                url: '#'
+            },
+        ]
+    },
+    {
+        title: 'Shop',
+        items: [
+            {
+                text: 'Shop DC',
+                url: '#'
+            },
+            {
+                text: 'Shop DC Collectibles',
+                url: '#'
+            },
+        ]
+    },
+    {
+        title: 'DC',
+        items: [
+            {
+                text: 'Terms of use',
+                url: '#'
+            },
+            {
+                text: 'Privacy policy (new)',
+                url: '#'
+            },
+            {
+                text: 'Ad choices',
+                url: '#'
+            },
+            {
+                text: 'Advertising',
+                url: '#'
+            },
+            {
+                text: 'Jobs',
+                url: '#'
+            },
+            {
+                text: 'Subscriptions',
+                url: '#'
+            },
+            {
+                text: 'Talent Worshops',
+                url: '#'
+            },
+            {
+                text: 'CPSC certificates',
+                url: '#'
+            },
+            {
+                text: 'Ratings',
+                url: '#'
+            },
+            {
+                text: 'Shop help',
+                url: '#'
+            },
+            {
+                text: 'Contact us',
+                url: '#'
+            },
+        ]
+    },
+    {
+        title: 'Sites',
+        items: [
+            {
+                text: 'DC',
+                url: '#'
+            },
+            {
+                text: 'MAD magazine',
+                url: '#'
+            },
+            {
+                text: 'DC kids',
+                url: '#'
+            },
+            {
+                text: 'DC universe',
+                url: '#'
+            },
+            {
+                text: 'DC power visa',
+                url: '#'
+            },
+        ]
+    }
+
+];
+
+const images = [
+    {
+        name: '../assets/images/footer-facebook.png',
+        alt: 'Facebook'
+    },
+    {
+        name: '../assets/images/footer-periscope.png',
+        alt: 'Periscope'
+    },
+    {
+        name: '../assets/images/footer-pinterest.png',
+        alt: 'Pinterest'
+    },
+    {
+        name: '../assets/images/footer-twitter.png',
+        alt: 'Twitter'
+    },
+    {
+        name: '../assets/images/footer-youtube.png',
+        alt: 'Youtube'
+    }
+]
+
+export {section, menu, images};
