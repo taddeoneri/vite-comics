@@ -5,7 +5,7 @@
                 <p class="m-0 text-light py-5">Content goes here</p>
             </div>
         </div>
-        <div class="main-bottom">
+        <div class="main-bottom text-uppercase">
             <div class="container d-flex justify-content-between">
                 <div v-for="card in cards" class="d-flex align-items-center">
                     <img :src="getImagePath(`../assets/images/${card.url}`)" alt="">
@@ -13,7 +13,6 @@
                 </div>
             </div>
         </div>
-        
     </main>
     <div>
     </div>

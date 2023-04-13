@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+  *{
+    font-family: 'Oswald', sans-serif;
+  }
 </style>

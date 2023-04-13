@@ -177,23 +177,23 @@ const menu = [
 
 const images = [
     {
-        name: '../assets/images/footer-facebook.png',
+        name: 'footer-facebook.png',
         alt: 'Facebook'
     },
     {
-        name: '../assets/images/footer-periscope.png',
+        name: 'footer-periscope.png',
         alt: 'Periscope'
     },
     {
-        name: '../assets/images/footer-pinterest.png',
+        name: 'footer-pinterest.png',
         alt: 'Pinterest'
     },
     {
-        name: '../assets/images/footer-twitter.png',
+        name: 'footer-twitter.png',
         alt: 'Twitter'
     },
     {
-        name: '../assets/images/footer-youtube.png',
+        name: 'footer-youtube.png',
         alt: 'Youtube'
     }
 ];

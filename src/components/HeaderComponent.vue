@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-light">
+    <header class="bg-light text-uppercase">
         <div class="container bg-light d-flex justify-content-between align-items-center">
             <div>
                 <img src="../assets/images/dc-logo.png" alt="Logo">
