@@ -196,6 +196,29 @@ const images = [
         name: '../assets/images/footer-youtube.png',
         alt: 'Youtube'
     }
+];
+
+const items = [
+    {
+        url: 'buy-comics-digital-comics.png',
+        text: 'Digital comics'
+    },
+    {
+        url: 'buy-comics-merchandise.png',
+        text: 'Dc merchandise'
+    },
+    {
+        url: 'buy-comics-subscriptions.png',
+        text: 'Subscription'
+    },
+    {
+        url: 'buy-comics-shop-locator.png',
+        text: 'Comic shop locator'
+    },
+    {
+        url: 'buy-dc-power-visa.svg',
+        text: 'Dc power visa'
+    }
 ]
 
-export {section, menu, images};
+export {section, menu, images, items};

@@ -1,51 +1,46 @@
 <template>
-    <footer>
-        <div class="container">
-            <ul class="text-light" v-for="(list, index) in lists">
-                <li>{{ list.title }}</li>
-                <li v-for="(link, index) in list.items"><a :href="link.url">{{ link.text }}</a></li>
-            </ul>
+    <main>
+        <div class="main-top">
+            <div class="container">
+                <p class="m-0 text-light py-5">Content goes here</p>
+            </div>
         </div>
-        <div class="container d-flex justify-content-between align-items-center">
-            <button>Sign-up now!</button>
-            <div class="d-flex align-items-center">
-                <p class="m-0">Follow us</p>
-                <div class="d-flex">
-                    <img v-for="picture in pictures" src="../assets/images/footer-facebook.png" alt="">
+        <div class="main-bottom">
+            <div class="container d-flex justify-content-between">
+                <div v-for="card in cards" class="d-flex align-items-center">
+                    <img :src="getImagePath(`../assets/images/${card.url}`)" alt="">
+                    <p class="m-0">{{ card.text }}</p>
                 </div>
             </div>
         </div>
-    </footer>
+        
+    </main>
+    <div>
+    </div>
 </template>
 
 <script>
-import {menu} from '../data/data.js';
-import {images} from '../data/data.js';
-
+import {items} from '../data/data.js'
 export default {
-    name: 'MainComponent',
+    name: 'FooterComponent',
     data(){
         return{
-            lists: menu,
-            pictures: images
+            cards: items
+        }
+    },
+    methods: {
+        getImagePath: function(imgPath){
+            return new URL(imgPath, import.meta.url).href;
         }
     }
 }
 </script>
 
 <style lang="scss" scoped>
-    footer{
-        //background-image: url('../assets/images/footer-bg.jpg');
+    .main-top{
+        background-color: black;
     }
-    img{
-        opacity: .5;
-    }
-    li{
-        list-style: none;
-        a{
-            text-decoration: none;
-            color: white;
-            font-size: 14px;
-        }
+    .main-bottom{
+        background-color: blue;
     }
 </style>
