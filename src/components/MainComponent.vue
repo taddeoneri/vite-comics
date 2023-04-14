@@ -1,8 +1,13 @@
 <template>
     <main>
-        <div class="main-top">
+        <div class="jumbo overflow-hidden">
+            <img class="img-fluid" src="../assets/images/jumbotron.jpg" alt="Jumbotron">
+        </div>
+        <div class="main-top p-5">
             <div class="container">
-                <p class="m-0 text-light py-5">Content goes here</p>
+                <div class="row">
+                    <CardComponent :image="film.thumb" :title="film.series" v-for="film in films"/>
+                </div>
             </div>
         </div>
         <div class="main-bottom text-uppercase py-5 text-light">
@@ -19,12 +24,19 @@
 </template>
 
 <script>
-import {items} from '../data/data.js'
+import {items} from '../data/data.js';
+import {cards} from '../data/data.js';
+import CardComponent from './CardComponent.vue';
+
 export default {
     name: 'FooterComponent',
+    components: {
+        CardComponent
+    },
     data(){
         return{
-            cards: items
+            cards: items,
+            films: cards
         }
     },
     methods: {
@@ -51,5 +63,9 @@ export default {
             object-fit: contain;
             margin: 0px 10px;
         }
+    }
+    .jumbo{
+        width: 100%;
+        height: 350px;
     }
 </style>
