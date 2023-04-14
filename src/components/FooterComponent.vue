@@ -1,9 +1,9 @@
 <template>
     <footer>
-        <div class="footer-top">
+        <div class="footer-top overflow-hidden">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="d-flex">
-                    <ul class="text-light m-0 p-0" v-for="(list, index) in lists">
+                    <ul class="text-light p-0" v-for="(list, index) in lists">
                         <li><h4 class="my-3">{{ list.title }}</h4></li>
                         <li class="text-capitalize" v-for="(link, index) in list.items"><a :href="link.url">{{ link.text }}</a></li>
                     </ul>
@@ -47,6 +47,12 @@ export default {
     .footer-top{
         background-image: url('../assets/images/footer-bg.jpg');
         background-size: cover;
+        .container{
+            height: 430px;
+        }
+        ul{
+            margin-right: 30px;
+        }
     }
     .footer-bottom{
         background-color: #303030;
