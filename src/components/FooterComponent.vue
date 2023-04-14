@@ -13,13 +13,13 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom py-3">
+        <div class="footer-bottom py-4">
             <div class="container d-flex justify-content-between align-items-center">
                 <button>Sign-up now!</button>
                 <div class="d-flex align-items-center">
-                    <p class="m-0">Follow us</p>
+                    <p class="m-0 text-primary text-uppercase fw-bold mx-2">Follow us</p>
                     <div class="d-flex">
-                        <img v-for="picture in pictures" :src="'/images/'+picture.name" alt="">
+                        <img class="ms-3" v-for="picture in pictures" :src="'/images/'+picture.name" alt="">
                     </div>
                 </div>
             </div>
@@ -49,16 +49,25 @@ export default {
         background-size: cover;
     }
     .footer-bottom{
-        background-color: darkgray;
-    }
-    img{
-        opacity: .5;
+        background-color: #303030;
+        p{
+            font-size: 18px;
+        }
+        button{
+            border: 2px solid #0d6efd;
+            background-color: #303030;
+            color: white;
+            text-transform: uppercase;
+            padding: 8px 12px;
+            font-size: 15px;
+
+        }
     }
     li{
         list-style: none;
         a{
             text-decoration: none;
-            color: white;
+            color: #949494;
             font-size: 14px;
         }
     }
